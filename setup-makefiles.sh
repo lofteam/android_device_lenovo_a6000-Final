@@ -18,8 +18,8 @@
 set -e
 
 # Required!
-DEVICE=seed
-VENDOR=google
+DEVICE=a6000
+VENDOR=lenovo
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

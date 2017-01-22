@@ -1,4 +1,5 @@
 # Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2017 The Lineage-Os Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,24 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/google/seed/full_seed.mk)
+$(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common cm stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := cm_seed
-BOARD_VENDOR := google
-PRODUCT_DEVICE := seed
+TARGET_OTA_ASSERT_DEVICE := Kraft-T,K30T,K30-T,A6000,Kraft-W,Kraft-C,k30t,msm8916,Kraft-A6000,wt86518
 
-PRODUCT_GMS_CLIENTID_BASE := android-google
+PRODUCT_NAME := lineage_a6000
+BOARD_VENDOR := lenovo
+PRODUCT_DEVICE := a6000
 
-PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Google Seed
 
-PRODUCT_BRAND := Google
-TARGET_VENDOR := Google
-TARGET_VENDOR_PRODUCT_NAME := Seed
-TARGET_VENDOR_DEVICE_NAME := seed
+PRODUCT_GMS_CLIENTID_BASE := android-lenovo

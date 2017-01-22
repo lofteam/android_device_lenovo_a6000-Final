@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +15,14 @@
 # limitations under the License.
 
 FORCE_32_BIT := true
+BLOCK_BASED_OTA := false
+TW_INCLUDE_CRYPTO := true
 
 -include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-include device/google/seed/board/*.mk
+include device/lenovo/a6000/board/*.mk
 
-TARGET_BOARD_INFO_FILE := device/google/seed/board-info.txt
+TARGET_BOARD_INFO_FILE := device/lenovo/a6000/board-info.txt
 
 # inherit from the proprietary version
--include vendor/google/seed/BoardConfigVendor.mk
+-include vendor/lenovo/a6000/BoardConfigVendor.mk

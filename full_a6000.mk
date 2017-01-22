@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,13 +18,13 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from seed device
-$(call inherit-product, device/google/seed/device.mk)
+# Inherit from a6000 device
+$(call inherit-product, device/lenovo/a6000/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := seed
-PRODUCT_NAME := full_seed
-PRODUCT_BRAND := google
-PRODUCT_MODEL := SEED
-PRODUCT_MANUFACTURER := google
+PRODUCT_DEVICE := a6000
+PRODUCT_NAME := full_a6000
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := A6000
+PRODUCT_MANUFACTURER := Lenovo
 
