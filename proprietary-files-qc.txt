@@ -607,9 +607,6 @@ vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 
-# LIGHTS (wt86518 5.0.2)
-lib/hw/lights.msm8916.so
-
 # Graphics
 vendor/lib/libscale.so
 vendor/lib/egl/eglsubAndroid.so
