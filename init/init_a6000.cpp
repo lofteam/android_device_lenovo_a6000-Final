@@ -253,8 +253,8 @@ void vendor_load_properties()
     ERROR("Detected board ID=%s\n", board_id);
 
     /* Unified description and fingerprint for now */
-    property_set("ro.build.description", "wt86518-user 5.0.2 LRX22G release-keys");
-    property_set("ro.build.fingerprint", "Lenovo/wt86518/wt86518:5.0.2/LRX22G/vibe-ui-2.0/release-keys");
+    property_set("ro.build.description", "a6000-user 5.0.2 LRX22G release-keys");
+    property_set("ro.build.fingerprint", "Lenovo/a6000/a6000:5.0.2/LRX22G/vibe-ui-2.0/release-keys");
 
     ERROR("Setup %s properties done!\n", board_id);
 
