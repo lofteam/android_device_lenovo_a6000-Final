@@ -228,9 +228,9 @@ void vendor_load_properties()
         property_set("dalvik.vm.heapminfree", "512k");
         property_set("dalvik.vm.heapmaxfree", "8m");
         property_set("ro.build.product", "Lenovo");
-        property_set("ro.product.device", "A6000 Plus");
-        property_set("ro.product.model", "Lenovo A6000 Plus");
-        property_set("ro.product.name", "Lenovo A6000 Plus");
+        property_set("ro.product.device", "a6000 plus");
+        property_set("ro.product.model", "Lenovo a6000 plus");
+        property_set("ro.product.name", "Lenovo a6000 plus");
         property_set("ro.telephony.default_network", "9,1");
         property_set("telephony.lteOnCdmaDevice", "0");
     } else {
@@ -241,9 +241,9 @@ void vendor_load_properties()
         property_set("dalvik.vm.heapminfree", "2m");
         property_set("dalvik.vm.heapmaxfree", "8m");
         property_set("ro.build.product", "Lenovo");
-        property_set("ro.product.device", "A6000");
-        property_set("ro.product.model", "Lenovo A6000");
-        property_set("ro.product.name", "Lenovo A6000");
+        property_set("ro.product.device", "a6000");
+        property_set("ro.product.model", "Lenovo a6000");
+        property_set("ro.product.name", "Lenovo a6000");
         property_set("ro.telephony.default_network", "9,1");
         property_set("telephony.lteOnCdmaDevice", "0");
     }
