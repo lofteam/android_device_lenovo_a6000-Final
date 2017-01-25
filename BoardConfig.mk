@@ -15,8 +15,8 @@
 # limitations under the License.
 
 FORCE_32_BIT := true
-BLOCK_BASED_OTA := false
-TW_INCLUDE_CRYPTO := true
+#BLOCK_BASED_OTA := false
+#TW_INCLUDE_CRYPTO := true
 
 -include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
