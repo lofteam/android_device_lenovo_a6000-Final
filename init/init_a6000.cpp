@@ -227,12 +227,6 @@ void vendor_load_properties()
         property_set("dalvik.vm.heaptargetutilization", "0.75");
         property_set("dalvik.vm.heapminfree", "512k");
         property_set("dalvik.vm.heapmaxfree", "8m");
-        property_set("ro.build.product", "Lenovo");
-        property_set("ro.product.device", "a6000 plus");
-        property_set("ro.product.model", "Lenovo a6000 plus");
-        property_set("ro.product.name", "Lenovo a6000 plus");
-        property_set("ro.telephony.default_network", "9,1");
-        property_set("telephony.lteOnCdmaDevice", "0");
     } else {
         property_set("dalvik.vm.heapstartsize", "8m");
         property_set("dalvik.vm.heapgrowthlimit", "96m");
@@ -240,21 +234,22 @@ void vendor_load_properties()
         property_set("dalvik.vm.heaptargetutilization", "0.75");
         property_set("dalvik.vm.heapminfree", "2m");
         property_set("dalvik.vm.heapmaxfree", "8m");
-        property_set("ro.build.product", "Lenovo");
-        property_set("ro.product.device", "a6000");
-        property_set("ro.product.model", "Lenovo a6000");
-        property_set("ro.product.name", "Lenovo a6000");
-        property_set("ro.telephony.default_network", "9,1");
-        property_set("telephony.lteOnCdmaDevice", "0");
     }
 
     import_kernel_cmdline(0, import_kernel_nv);
     property_set("ro.product.board", board_id);
     ERROR("Detected board ID=%s\n", board_id);
 
+        property_set("ro.build.product", "Lenovo");
+        property_set("ro.product.device", "A6000");
+        property_set("ro.product.model", "Lenovo A6000");
+        property_set("ro.product.name", "Lenovo A6000");
+        property_set("ro.telephony.default_network", "9,1");
+        property_set("telephony.lteOnCdmaDevice", "0");
+
     /* Unified description and fingerprint for now */
-    property_set("ro.build.description", "a6000-user 5.0.2 LRX22G release-keys");
-    property_set("ro.build.fingerprint", "Lenovo/a6000/a6000:5.0.2/LRX22G/vibe-ui-2.0/release-keys");
+    property_set("ro.build.description", "A6000-user 5.0.2 LRX22G release-keys");
+    property_set("ro.build.fingerprint", "Lenovo/A6000/A6000:5.0.2/LRX22G/vibe-ui-2.0/release-keys");
 
     ERROR("Setup %s properties done!\n", board_id);
 
@@ -266,3 +261,4 @@ void vendor_load_properties()
 
     return;
 }
+
